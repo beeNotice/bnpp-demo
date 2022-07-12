@@ -12,3 +12,16 @@ management:
   endpoint:
     health:
       show-details: always
+    web:
+      exposure:
+        include: '*'
+    group:
+      liveness:
+        show-details: always
+      readiness:
+        show-details: always
+
+wavefront:
+  application:
+    name: bnpp-demo
+    service: dev
